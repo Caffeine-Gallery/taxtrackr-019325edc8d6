@@ -1,3 +1,17 @@
+.header-image-container {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
 .spinner-border {
     width: 3rem;
     height: 3rem;
@@ -39,5 +53,9 @@
     
     .card {
         margin-bottom: 1rem;
+    }
+
+    .header-image {
+        height: auto;
     }
 }
