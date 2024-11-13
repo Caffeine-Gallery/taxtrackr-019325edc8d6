@@ -12,20 +12,7 @@
     height: auto;
     display: block;
     object-fit: cover;
-    filter: sepia(1) saturate(3) hue-rotate(315deg);
-    mix-blend-mode: color;
-    transform: scaleX(-1);
-}
-
-.header-image-container::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 0, 0, 0.5);
-    pointer-events: none;
+    transform: scaleY(-1);
 }
 
 .spinner-border {
