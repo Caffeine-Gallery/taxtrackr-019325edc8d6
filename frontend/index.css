@@ -14,6 +14,7 @@
     object-fit: cover;
     filter: sepia(1) saturate(3) hue-rotate(315deg);
     mix-blend-mode: color;
+    transform: scaleX(-1);
 }
 
 .header-image-container::after {
