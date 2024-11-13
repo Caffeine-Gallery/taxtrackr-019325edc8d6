@@ -4,6 +4,7 @@
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
 }
 
 .header-image {
@@ -11,6 +12,19 @@
     height: auto;
     display: block;
     object-fit: cover;
+    filter: sepia(1) saturate(3) hue-rotate(315deg);
+    mix-blend-mode: color;
+}
+
+.header-image-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 0, 0, 0.5);
+    pointer-events: none;
 }
 
 .spinner-border {
@@ -57,7 +71,7 @@
     }
 
     .header-image-container {
-        width: 66.66%; /* Larger on mobile for better visibility */
+        width: 66.66%;
     }
 
     .header-image {
